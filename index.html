@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer (freeCodeCamp project)</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/css/uikit.gradient.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/css/components/search.gradient.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/css/components/notify.gradient.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+  <!-- Navbar -->
+  <nav class="uk-navbar uk-margin-large-bottom">
+    <span class="uk-navbar-brand uk-hidden-small">
+          <i class="uk-icon-wikipedia-w"></i>Viewer
+        </span>
+    <div class="uk-navbar-flip uk-hidden-small">
+      <div class="uk-navbar-content">
+        <form class="uk-search">
+          <input class="uk-search-field" type="search" placeholder="Search page...">
+        </form>
+      </div>
+      <ul class="uk-navbar-nav">
+        <li>
+          <a href="#" onclick="getRandomPage(); return false;">
+            <i class="uk-icon-random"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+      <i class="uk-icon-wikipedia-w"></i> Viewer
+    </div>
+  </nav>
+
+
+  <!-- Content -->
+  <div class="uk-grid" data-uk-grid-margin>
+    <div class="uk-width-medium-1-1">
+
+      <h1 id="page-title">
+            <i class="uk-icon-wikipedia-w"></i>Viewer
+          </h1>
+      <div id="content">
+        <p>Use the search bar above or click the random (<i class="uk-icon-random"></i>) button.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Off canvas -->
+<div id="offcanvas" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">
+      <i class="uk-icon-wikipedia-w"></i>Viewer
+    </div>
+    <form class="uk-search">
+      <input class="uk-search-field" type="search" placeholder="Search page...">
+    </form>
+
+    <ul class="uk-nav uk-nav-offcanvas">
+      <li>
+        <a href="#" onclick="getRandomPage(); return false;">Random page</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/js/uikit.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/js/components/search.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/js/components/notify.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

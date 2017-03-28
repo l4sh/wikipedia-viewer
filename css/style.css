@@ -1,0 +1,40 @@
+.uk-navbar-nav > li > a[href="#"] {
+  cursor: pointer;
+}
+
+#page-title a {
+  text-decoration: none;
+}
+
+.uk-offcanvas .uk-navbar-brand {
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.uk-offcanvas .uk-search {
+  margin-top: 10px;
+}
+
+
+/* Wikipedia elements */
+.infobox,
+.thumb.tright {
+  float: right;
+  border: 1px solid #888;
+  padding: 10px;
+  margin: 0 0 20px 30px;
+  width: 30%;
+}
+
+table table.infobox {
+  width: 100%;
+  border: none;
+}
+
+.mw-editsection {
+  display: none;
+}
+
+.ambox {
+  margin-bottom: 20px;
+}
